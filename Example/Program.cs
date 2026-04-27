@@ -4,13 +4,19 @@ static class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello");
-
-        //Console.WriteLine(Console.Read());
-
-        //Console.WriteLine(Console.ReadKey());
-
-        Console.WriteLine(Console.ReadLine());
+        var a = 10;
+        Console.WriteLine($"a < 10  -> {a < 10}");
+        Console.WriteLine($"a < 20  -> {a < 20}");
+        Console.WriteLine($"a <  0  -> {a < 0}");
+        Console.WriteLine($"a > 10  -> {a > 10}");
+        Console.WriteLine($"a > 20  -> {a > 20}");
+        Console.WriteLine($"a >  0  -> {a > 0}");
+        Console.WriteLine($"a <= 10 -> {a <= 10}");
+        Console.WriteLine($"a <= 20 -> {a <= 20}");
+        Console.WriteLine($"a <=  0 -> {a <= 0}");
+        Console.WriteLine($"a >= 10 -> {a >= 10}");
+        Console.WriteLine($"a >= 20 -> {a >= 20}");
+        Console.WriteLine($"a >=  0 -> {a >= 0}");
 
 
     }
