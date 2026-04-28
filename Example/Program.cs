@@ -4,19 +4,20 @@ static class Program
 {
     static void Main(string[] args)
     {
-        var a = 10;
-        Console.WriteLine($"a < 10  -> {a < 10}");
-        Console.WriteLine($"a < 20  -> {a < 20}");
-        Console.WriteLine($"a <  0  -> {a < 0}");
-        Console.WriteLine($"a > 10  -> {a > 10}");
-        Console.WriteLine($"a > 20  -> {a > 20}");
-        Console.WriteLine($"a >  0  -> {a > 0}");
-        Console.WriteLine($"a <= 10 -> {a <= 10}");
-        Console.WriteLine($"a <= 20 -> {a <= 20}");
-        Console.WriteLine($"a <=  0 -> {a <= 0}");
-        Console.WriteLine($"a >= 10 -> {a >= 10}");
-        Console.WriteLine($"a >= 20 -> {a >= 20}");
-        Console.WriteLine($"a >=  0 -> {a >= 0}");
+        
+        object obj = Console.ReadLine()??"";
+        switch (obj)
+        {
+            case int n:
+                Console.WriteLine($"整数型:{n}");
+                break;
+            case string s:
+                Console.WriteLine($"文字列型:{s}");
+                break;
+            default:
+                Console.WriteLine("他のデータ型");
+                break;
+        }
 
 
     }

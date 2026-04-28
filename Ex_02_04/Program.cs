@@ -11,7 +11,8 @@ static class Program
         for(int i=0; i<3; i++)
         {
             Console.Write($"数値{i+1}を入力してください->");
-            nums[i] = double.Parse(Console.ReadLine() ?? "0"); // nullだった時に0が入る(警告回避)
+            nums[i] = double.Parse(Console.ReadLine() ?? "0"); // nullだったときは0を入れる
+            // 数値に変換できないときの処理を入れたい
         }
 
         Console.WriteLine("入力結果");
