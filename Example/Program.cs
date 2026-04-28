@@ -5,18 +5,19 @@ static class Program
     static void Main(string[] args)
     {
         
-        object obj = Console.ReadLine()??"";
-        switch (obj)
+        PrintHello();
+
+        int answer = Add(4,5);
+        Console.WriteLine(answer);
+
+        void PrintHello()
         {
-            case int n:
-                Console.WriteLine($"整数型:{n}");
-                break;
-            case string s:
-                Console.WriteLine($"文字列型:{s}");
-                break;
-            default:
-                Console.WriteLine("他のデータ型");
-                break;
+            Console.WriteLine("Hello, World!");
+        }
+
+        int Add(int x,int y)
+        {
+            return x + y;
         }
 
 
