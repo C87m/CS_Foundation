@@ -18,11 +18,12 @@ static class Program
         }
         catch (InputParameterLessThanZeroException e)
         {
-            Console.WriteLine($"xに{num1}が入力されました。正の値を入力してください。");
+            //xに{num1}が入力されました。正の値を入力してください。
+            Console.WriteLine(e.Message);
         }
         catch(Exception e)
         {
-            Console.WriteLine("Attempted to divide by zero.");
+            Console.WriteLine(e.Message);
         }
         finally
         {
