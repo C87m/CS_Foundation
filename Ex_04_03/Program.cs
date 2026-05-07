@@ -27,7 +27,7 @@ static class Program
         for(int i=0; i<emp.Count/3; i++)
         {
             Employee e = new(int.Parse(emp[i*3]), emp[i*3+1], emp[i*3+2]);
-            Console.WriteLine(e.ToString());
+            Console.WriteLine(e);
         }
 
     }
