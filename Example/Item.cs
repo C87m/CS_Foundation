@@ -5,16 +5,15 @@ using System.Threading.Tasks;
 
 namespace Example
 {
-    internal class Book
+    public class Item
     {
-        public string Name {  get; set; }
-        internal Book(string name)
-        {
-            Name = name;
-        }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Price { get; set; }
+
         public override string ToString()
         {
-            return Name;
+            return $"商品:{Name}";
         }
     }
 }
